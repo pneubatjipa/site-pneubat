@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>PNEUBAT Ji-Paraná - RO | Pneus e Baterias</title>
+  <title>PNEUBAT Ji-Paraná - RO | Contato</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="PNEUBAT em Ji-Paraná - RO. Pneus, baterias e som automotivo. Ligue ou chame no WhatsApp agora.">
@@ -18,42 +18,40 @@
       height:100vh;
       background:#000;
       font-family: Arial, Helvetica, sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
       color:#fff;
+      position: relative;
+      overflow: hidden;
     }
 
-    .container{
-      width:100%;
-      max-width:520px;
-      text-align:center;
-      padding:20px;
-    }
-
-    /* ARTE / LOGO */
+    /* LOGO */
     .logo{
       width:100%;
       max-width:420px;
-      margin:0 auto 26px;
       display:block;
+      margin: 24px auto 0;
     }
 
-    /* BOTÕES */
-    .botoes{
+    /* CONTAINER CENTRAL DOS BOTÕES */
+    .botoes-centro{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      width:100%;
+      max-width:520px;
+      padding:0 20px;
       display:flex;
       gap:14px;
-      justify-content:center;
     }
 
     .btn{
       flex:1;
-      max-width:240px;
       padding:18px 10px;
       font-size:18px;
       font-weight:900;
       border-radius:16px;
       text-decoration:none;
+      text-align:center;
       box-shadow:0 12px 25px rgba(0,0,0,.6);
       transition:.2s ease;
     }
@@ -83,25 +81,14 @@
 
 <body>
 
-  <main class="container">
+  <!-- LOGO (pode ser 1080x1920 sem problema) -->
+  <img src="logo.png" alt="PNEUBAT" class="logo">
 
-    <!-- LOGO / ARTE -->
-    <img src="logo.png" alt="PNEUBAT Pneus, Baterias e Som Automotivo" class="logo">
-
-    <!-- BOTÕES -->
-    <div class="botoes">
-
-      <a href="tel:+556993886969" class="btn ligar">
-        📞 LIGAR
-      </a>
-
-      <a href="https://wa.me/556993886969" target="_blank" class="btn whatsapp">
-        💬 WHATSAPP
-      </a>
-
-    </div>
-
-  </main>
+  <!-- BOTÕES SEMPRE NO CENTRO -->
+  <div class="botoes-centro">
+    <a href="tel:+556993886969" class="btn ligar">📞 LIGAR</a>
+    <a href="https://wa.me/556993886969" target="_blank" class="btn whatsapp">💬 WHATSAPP</a>
+  </div>
 
 </body>
 </html>
